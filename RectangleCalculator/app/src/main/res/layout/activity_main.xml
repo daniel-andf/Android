@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daniel.rectanglecalculator.MainActivity">
+
+    <TextView
+        android:text="@string/valueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/perimeterLabel"
+        android:layout_alignLeft="@+id/areaTextView"
+        android:layout_alignStart="@+id/areaTextView"
+        android:id="@+id/perimeterTextView"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/widthText"
+        android:id="@+id/widthLabel"
+        android:textSize="@dimen/textSize"
+        android:layout_alignBottom="@+id/widthTextEditView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/widthTextEditView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/valueText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/heightTextEditView"
+        android:layout_alignBaseline="@+id/heightLabel"
+        android:layout_alignBottom="@+id/heightLabel"
+        android:layout_alignLeft="@+id/widthTextEditView"
+        android:layout_alignStart="@+id/widthTextEditView"
+        android:text="@string/valueText" />
+
+    <TextView
+        android:text="@string/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/heightLabel"
+        android:elevation="22dp"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/widthLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/areaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/areaLabel"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/heightTextEditView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/perimeterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/perimeterLabel"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/areaLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaTextView"
+        android:textSize="@dimen/textSize"
+        android:text="@string/valueText"
+        android:layout_above="@+id/perimeterLabel"
+        android:layout_alignLeft="@+id/heightTextEditView"
+        android:layout_alignStart="@+id/heightTextEditView" />
+</RelativeLayout>

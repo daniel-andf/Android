@@ -1,0 +1,3 @@
+# Referenced at C:\Users\danie\AndroidStudioProjects\MySampleApp\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:31
+-keep class com.mysampleapp.Application { <init>(...); }
+

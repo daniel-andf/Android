@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    tools:context="com.example.daniel.pokerapp.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/player1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" Player1 :"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="@+id/card1P1ImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Player1 :"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="@+id/dealButton"
+        app:layout_constraintTop_toBottomOf="@+id/dealButton" />
+
+    <TextView
+        android:id="@+id/handsValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hands Values :"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="@+id/p1HandValueTextView"
+        app:layout_constraintTop_toBottomOf="@+id/p1CardsTextView" />
+
+    <TextView
+        android:id="@+id/resultValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="16dp"
+        android:text="Result :"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resultValueTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Player2 :"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="@+id/card1P1ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/card2P1ImageView" />
+
+    <TextView
+        android:id="@+id/player2Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Player2 :"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="@+id/compareButton"
+        app:layout_constraintTop_toBottomOf="@+id/compareButton" />
+
+    <ImageView
+        android:id="@+id/card4P1ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/card4P2ImageView"
+        app:layout_constraintEnd_toStartOf="@+id/card5P1ImageView"
+        app:layout_constraintStart_toEndOf="@+id/card3P1ImageView"
+        app:layout_constraintTop_toTopOf="@+id/player1Text"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card5P1ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card4P1ImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card4P1ImageView"
+        app:layout_constraintTop_toTopOf="@+id/card4P1ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card4P2ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card3P2ImageView"
+        app:layout_constraintEnd_toStartOf="@+id/card5P2ImageView"
+        app:layout_constraintStart_toEndOf="@+id/card3P2ImageView"
+        app:layout_constraintTop_toTopOf="@+id/card3P2ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card5P2ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card4P2ImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card4P2ImageView"
+        app:layout_constraintTop_toTopOf="@+id/card4P2ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card3P1ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card4P1ImageView"
+        app:layout_constraintEnd_toStartOf="@+id/card4P1ImageView"
+        app:layout_constraintStart_toEndOf="@+id/card2P1ImageView"
+        app:layout_constraintTop_toTopOf="@+id/card4P1ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card3P2ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dealButton"
+        app:layout_constraintEnd_toStartOf="@+id/card4P2ImageView"
+        app:layout_constraintStart_toEndOf="@+id/card2P2ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card2P1ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card3P1ImageView"
+        app:layout_constraintEnd_toStartOf="@+id/card3P1ImageView"
+        app:layout_constraintStart_toEndOf="@+id/card1P1ImageView"
+        app:layout_constraintTop_toTopOf="@+id/card3P1ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card2P2ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card3P2ImageView"
+        app:layout_constraintEnd_toStartOf="@+id/card3P2ImageView"
+        app:layout_constraintStart_toEndOf="@+id/card1P2ImageView"
+        app:layout_constraintTop_toTopOf="@+id/card3P2ImageView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card1P2ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card2P2ImageView"
+        app:layout_constraintEnd_toStartOf="@+id/card2P2ImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2Text"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/card1P1ImageView"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/player2Text"
+        app:layout_constraintEnd_toStartOf="@+id/card2P1ImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player1Text"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/dealButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="221dp"
+        android:onClick="onClick"
+        android:text="DEAL"
+        app:layout_constraintEnd_toStartOf="@+id/compareButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/compareButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="7dp"
+        android:onClick="onClick"
+        android:text="COMPARE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dealButton"
+        app:layout_constraintTop_toBottomOf="@+id/card5P2ImageView" />
+
+    <TextView
+        android:id="@+id/p1CardsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/dealButton"
+        app:layout_constraintStart_toStartOf="@+id/player1Text2"
+        app:layout_constraintTop_toBottomOf="@+id/player1Text2" />
+
+    <TextView
+        android:id="@+id/resultValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="1"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultValueText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resultValueText"
+        app:layout_constraintTop_toTopOf="@+id/resultValueText" />
+
+    <TextView
+        android:id="@+id/p1HandValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/p1CardsTextView"
+        app:layout_constraintStart_toStartOf="@+id/resultValueText"
+        app:layout_constraintTop_toBottomOf="@+id/handsValueText" />
+
+    <TextView
+        android:id="@+id/p2HandValueTextView"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/p1HandValueTextView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/p2CardsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/compareButton"
+        app:layout_constraintStart_toStartOf="@+id/p2HandValueTextView"
+        app:layout_constraintTop_toBottomOf="@+id/player2Text2" />
+
+</android.support.constraint.ConstraintLayout>
